@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderViewhierarchyModel" type="com.weempowerapp.app.modules.framefour.data.model.ImageSliderViewhierarchyModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearViewhierarchy"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_4">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="@dimen/_186pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageUrl="@{imageSliderViewhierarchyModel.imageImage}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_12138371_151307"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtSometechjournal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:singleLine="true"
+            android:text="@{imageSliderViewhierarchyModel.txtSometechjournal}"
+            style="@style/txtManropemedium12" textUnderline="true" tools:text="@string/msg_https_www_fac"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTechgiant"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{imageSliderViewhierarchyModel.txtTechgiant}"
+            style="@style/txtLexendsemibold16" tools:text="@string/msg_donation_of_pads"/>
+        <LinearLayout android:id="@+id/linearRow3hago"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txt3hago"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{imageSliderViewhierarchyModel.txt3hago}"
+                style="@style/txtNotoSansnotosansitalic12" tools:text="@string/lbl_3h_ago"/>
+            <ImageView android:id="@+id/imageIconbuttonthree"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_280pxh"
+                android:layout_width="@dimen/_32pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageUrl="@{imageSliderViewhierarchyModel.imageIconbuttonthree}"
+                placeHolder="@{@drawable/image_not_found}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_icon_button_3"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
